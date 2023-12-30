@@ -1,8 +1,8 @@
 'use client';
 import React, { useState } from 'react';
 import { ecomData } from '@/data';
-import Filters from '@/components/filters';
-import Product from '@/components/Product';
+import Filters from '../../components/filters';
+import Product from '../../components/Product';
 
 function ResultsPage() {
   //console.log(ecomData);
