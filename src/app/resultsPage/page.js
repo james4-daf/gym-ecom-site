@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { ecomData } from '@/data';
 import Filters from '../../components/filters';
-import Product from '../../components/Product';
+import Product from '../../components/product';
 
 function ResultsPage() {
   //console.log(ecomData);
