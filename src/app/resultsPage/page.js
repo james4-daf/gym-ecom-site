@@ -11,17 +11,17 @@ function ResultsPage() {
   const [filteredItemsData, setFilteredItemsData] = useState(ecomData);
 
   return (
-    <>
+    <div className="ml-7">
       <h2 className="text-xl">ResultsPage</h2>
-      <div className="grid grid-cols-6 ">
-        <div className="col-span-1 inline-grid max-w-md">
+      <div className="flex">
+        <div className="filters  min-w-fit  max-w-lg:">
           <Filters
             setFilteredItemsData={setFilteredItemsData}
             itemsData={itemsData}
           />
         </div>
-        <div className="col-span-2 p-5 ">
-          <ul>
+        <div className="products flex px-8 ">
+          <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 min-w-16">
             {filteredItemsData.map((product) => {
               const { productName, price, productId } = product;
               return (
@@ -36,7 +36,7 @@ function ResultsPage() {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

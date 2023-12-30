@@ -20,7 +20,7 @@ function Product(props) {
   //   return null;
   // }
   return (
-    <div>
+    <>
       <Card>
         <CardHeader>
           <CardTitle>
@@ -36,7 +36,7 @@ function Product(props) {
           <p>{price}</p>
         </CardFooter>
       </Card>
-    </div>
+    </>
   );
 }
 
